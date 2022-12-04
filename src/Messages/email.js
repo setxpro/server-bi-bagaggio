@@ -15,10 +15,10 @@ const transporter = nodemailer.createTransport({
     }
 })
 
-async function sendEmail() {
+async function sendEmail(count) {
     const mailSent = await transporter.sendMail({
         subject: 'Fluxo de dados',
-        text: 'Foi Cadastrado no banco o fluxo de registro das lojas.',
+        text: `Sucesso! Foi cadastrado no banco ${count} registros`,
         from: 'NodeJS <patrick.anjos@bagaggio.com.br>',
         to: ['zendteamdev@gmail.com', 'developerseven77@gmail.com', 'patrick.anjos@bagaggio.com.br']
     });
