@@ -27,5 +27,3 @@
 - [x] NodeJS
 - [x] Nodemailer
 - [x] Twilio 
-- [x] Axios
-- [x] Express
